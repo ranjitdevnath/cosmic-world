@@ -8,6 +8,9 @@
 body{
      font-family: 'Montserrat', sans-serif;
 }
+/* ==================
+=====common css======
+================== */
 .container{
      max-width: 1200px;
      margin: 0 auto;
@@ -32,6 +35,16 @@ body{
 .primary-button:active{
      top: 5px;
      box-shadow: 0 2px 0 #a5075e;
+}
+.section-taitle{
+     text-align: center;
+}
+.section-taitle h2{
+     text-transform: uppercase;
+     display: inline-block;
+     font-size: 40px;
+     border-bottom: 2px solid #ff008e;
+     margin: 50px 0;
 }
 header{
      background-image: url(images/cloud.png);
@@ -87,4 +100,42 @@ nav{
 }
 .banner-right img{
      width: 100%;
+}
+/*============================
+      Feature part css
+============================ */
+
+.feature{
+     display: grid;
+     gap: 30px;
+     grid-template-columns: 1fr 1fr;
+     justify-content: center;
+}
+.card{
+     width: 300px;
+     padding: 30px;
+     margin: 0 auto;
+     box-shadow: 0 30px 35px rgba(0, 0, 0, 0.2);
+}
+.card .card-icon{
+     background-color: #ff008e;
+     border-radius: 50%;
+     height: 60px;
+     width: 60px;
+     padding: 16px;
+     font-size: 28px;
+     color: #fff;
+}
+.card h3{
+     color: #ff008e;
+     font-size: 25px;
+}
+.card p{
+     margin: 10px 0;
+     line-height: 1.5;
+     color: gray;
+}
+.card a{
+     text-decoration: none;
+     color: #ff008e;
 }
